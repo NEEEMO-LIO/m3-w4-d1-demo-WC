@@ -1,13 +1,11 @@
-html {
+/* Global Style */
+.globalstyle, html, body {
   font-family: Verdana, sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
-body {
-  font-family: Verdana, sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-}
+
+/* Card Structure */
 .card .card-info {
   list-style-type: none;
   padding: 0;
@@ -15,40 +13,60 @@ body {
   border: 1px solid #afaeae !important;
   text-align: center;
 }
-.card .card-info li {
+
+/* Every row */
+li {
   padding: 8px 16px;
   border-bottom: 1px solid #ddd;
 }
+
 .card .card-info li:last-child {
   border-bottom: none;
 }
+
+/* Card items */
 .card .card-info .card-item {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
 }
+
 .card .card-info .card-item span {
   font-weight: bold;
 }
+
 .card .card-info .card-item .card-wide {
   letter-spacing: 4px;
 }
+
 .card .card-info .card-item .card-opacity {
-  opacity: 0.6;
+  opacity: 0.60;
 }
+
+/* Card footer */
 .card .card-info .card-btn {
   color: #000 !important;
   background-color: #f1f1f1 !important;
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
-.card .card-info .card-btn .button {
+
+/* Button default (green) */
+.card .card-info .card-btn .button,
+.button {
   color: #fff !important;
   background-color: #4CAF50 !important;
   padding: 12px 24px !important;
 }
+
+/* Card hover shadow */
 .card .card-shadow:hover {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                       0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                       0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* Header */
 .card .card-header {
   color: #fff !important;
   background-color: #000 !important;
@@ -56,3 +74,13 @@ body {
   padding-top: 32px !important;
   padding-bottom: 32px !important;
 }
+
+/* ---------- FIXED HOVER BUTTON (🔥 important part) ---------- */
+.card .card-info .card-btn .button.hover {
+  background-color: red !important;
+  color: #fff !important;
+  transition: 0.3s;
+}
+/* -------------------------------------------------------------- */
+
+/*# sourceMappingURL=styles.css.map */
